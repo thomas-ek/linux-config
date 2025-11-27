@@ -1,0 +1,7 @@
+alias a="source .venv*/bin/activate.fish"
+alias vim="nvim"
+alias reactivate="deactivate && activate"
+alias dc="docker compose"
+alias dcu="docker compose up"
+alias dcd="docker compose down"
+alias dcr="dcd && dcu"
