@@ -1,0 +1,6 @@
+copy_clipboard "system"
+copy_command "xclip -selection clipboard"
+
+keybinds {
+  unbind "Ctrl h" // unbind move
+}
