@@ -5,8 +5,6 @@ fish_vi_key_bindings
 set -x PATH "$PATH:/opt/nvim-linux-x86_64/bin"
 set -x SYSTEMD_EDITOR nvim
 
-
-
 # ~/.config/fish/config.fish
 if test -f ~/.gitlab_token
     # Read the file, strip the trailing newline, and export it
@@ -20,11 +18,4 @@ function y
         builtin cd -- "$cwd"
     end
     rm -f -- "$tmp"
-end
-
-if status is-interactive
-    # Commands to run in interactive sessions can go here
-
-    # Autostart zellij
-    eval "$(zellij setup --generate-auto-start fish)"
 end
