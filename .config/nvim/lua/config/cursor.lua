@@ -60,6 +60,11 @@ vim.api.nvim_set_hl(0, "LspReferenceText", { bg = "#ECE7F2" })
 vim.api.nvim_set_hl(0, "LspReferenceRead", { bg = "#ECE7F2" })
 vim.api.nvim_set_hl(0, "LspReferenceWrite", { bg = "#ECE7F2" })
 
+-- Window separators visible on Dayfox; the active window's frame is drawn by config/active-frame.lua
+vim.api.nvim_set_hl(0, "WinSeparator", { fg = "#A8A09A" })
+-- File name label of the focused window (incline)
+vim.api.nvim_set_hl(0, "InclineNormal", { bg = "#0087FF", fg = "#FFFFFF", bold = true })
+
 ---------------------------------------------------------------------
 -- 4. Toggle the line highlight quickly with <leader>tl --------------------
 ---------------------------------------------------------------------

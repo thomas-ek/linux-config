@@ -30,3 +30,4 @@ end, { desc = "Open Yazi (alias)" })
 -- Customized theme
 vim.cmd("colorscheme dayfox")
 require("config.cursor")
+require("config.active-frame").setup()

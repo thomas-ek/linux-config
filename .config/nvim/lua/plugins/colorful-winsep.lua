@@ -1,11 +1,13 @@
 return {
   {
     "nvim-zh/colorful-winsep.nvim",
+    -- The active window's frame is drawn by config/active-frame.lua
+    enabled = false,
     event = { "WinNew", "WinEnter" },
     config = true,
     opts = {
-      hi = { fg = "#FAB387", bg = "NONE" }, -- separator colour
-      symbols = { "━", "┃", "┏", "┓", "┗", "┛" }, -- heavy box-drawing set
+      border = "bold",
+      highlight = { fg = "#E8833A", bg = "NONE" },
     },
   },
 }
